@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Details.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Enter Your Details</h1>
+    </div>
+    <div class="flex">
+        <form method="get" id="form">
+            <div class="inputs">
+                <section class="01">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" >
+                </section>
+                <section class="second">
+                    <label for="telnum">Mobile Number</label>
+                    <select id="country" onchange="countryCode()" >
+                        <option value="no">country</option>
+                        <option value="SL">&#x1F1F1;&#x1F1F0; SL</option>
+                        <option value="IND">&#x1F1EE;&#x1F1F3; IN</option>
+                        <option value="USA">&#x1F1FA;&#x1F1F8; US</option>
+                        <option value="RUS">&#x1F1F7;&#x1F1FA; RU</option>
+                        <option value="AUS">&#x1F1E6;&#x1F1FA; AU</option>
+                        <option value="PAK">&#x1F1F5;&#x1F1F0; PK</option>
+                    </select>
+                    <input type="tel" name="telnum" id="outputTel">
+                </section>
+                <section class="third">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <div class="cemail">
+                        <label 
+                    for="cemail">Confirm Email</label>
+                    <input type="email" name="cemail" id="cemail">
+                    </div>
+                </section>
+                <a href="" id="href"><button type="submit" id="contbtn">Continue to Purachase</button></a>
+            </div>
+        </form>
+        <div class="summary-table">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th id="DateOut"></th>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <th id="TimeOut"></th>
+                </tr>
+                <tr>
+                    <th>Duration</th>
+                    <th id="DurationOut"></th>
+                </tr>
+                <tr>
+                    <th>TICKETS</th>
+                    <th>CHARGES</th>
+                </tr>
+                <tr>
+                    <th id="slAdult"></th>
+                    <th id="slAdultAmount"></th>
+                </tr>
+                <tr>
+                    <th id="slChild"></th>
+                    <th id="slChildAmount"></th>
+                </tr>
+                <tr>
+                    <th id="frAdult"></th>
+                    <th id="frAdultAmount"></th>
+                </tr>
+                <tr>
+                    <th id="frChild"></th>
+                    <th id="frChildAmount"></th>
+                </tr>
+                <tr>
+                    <th id="infant"></th>
+                    <th id="infantAmount"></th>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th id="totalOut"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./Details.js"></script>
+</body>
+</html>

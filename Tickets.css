@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #025464;
+}
+.header h1{
+    text-align: center;
+    color: transparent;
+    font-size: 80px;
+    -webkit-text-stroke:0.1px #ffff;
+    margin: 5% 0; 
+}
+.header img{
+    width: 700px;
+    margin-left: 27%;
+}
+
+/*DATE SECTION*/
+.date{
+    text-align: center;
+    color: #ffff;
+}
+.date h3{
+    font-size: 30px;
+    margin: 3%;
+}
+.date input{
+    padding: 15px;
+    width: 500px;
+    background: #ffff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #025464;
+}
+
+/*GUESTS SECTION*/
+
+.guests h3{
+    font-size: 30px;
+    margin: 5% 0 3% 0;
+    text-align: center;
+    color: #ffff;
+}
+.box{
+    text-align: center;
+    font-size: 25px;
+    color: #ffff;
+    padding: 10px;
+}
+.box button{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    color: #ffff;
+    border: solid 1px #ffff;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 1s;
+}
+.box span{
+    font-size: 17px;
+}
+.box button:hover{
+    background: #ffff;
+    color: #025464;
+}
+
+.durationinput{
+    text-align: center;
+    color: #ffff;
+}
+.durationinput h3{
+    margin: 5% 0 3% 0;
+    font-size: 30px;
+}
+#duration{
+    padding: 15px;
+    width: 500px;
+    background: #ffff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #025464;
+}
+#duration option{
+    color: #ffff;
+}
+
+table, th, tr{
+    border: solid 1px #ffff;
+    width: 800px;
+    padding: 10px;
+    margin-top: 5%;
+    color: #ffff;
+    margin-left: 25%;
+}
+#contbtn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont_btn{
+    color: #ffff;
+    padding: 15px;
+    border: solid 1px #ffff;
+    border-radius: 20px;
+    text-align: center;
+    margin: 3%;
+    transition: 1s;
+}
+#cont_btn:hover{
+    background: #ffff;
+    color: #025464;
+}
+
+@media screen and (max-width:1200px){
+    .header img{
+        width: 500px;
+        margin-left: 20%;
+    }
+    table{
+        margin-left: 10%;
+        width: 600px;
+    }
+}
+@media screen and (max-width:600px){
+    .header img{
+        width: 400px;
+        margin-left: 15%;
+    }
+    table{
+        margin-left: 5%;
+        width: 500px;
+    }
+}

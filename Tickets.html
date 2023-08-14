@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="./Tickets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="get" id="form" >
+    <div class="header">
+        <h1>Buy Tickets</h1>
+        <img src="./svj/booking.svg" alt="">
+    </div>
+    <div class="inputs">
+        <div class="date">
+            <h3>When are you Coming?</h3>
+            <input type="date" name="date" id="date" min="2023-08-14" required>
+        </div>
+        <div class="guests">
+            <h3>How many guest are coming?</h3>
+            <!--SRI LANKAN ADULT-->        
+            <div class="box">
+                <label for="sl-adult">Sri Lankan Adults : </label>
+                <button onclick="totalClick(-1)" type="button">-</button>
+                <span id="totalClicks">0</span>
+                <button onclick="totalClick(1)" type="button">+</button>
+            </div>
+    
+            <!--SRI LANKAN CHILD-->
+            <div class="box">
+                <label for="sl-child">Sri Lankan Children : </label>
+                <button onclick="totalClick2(-1)" type="button">-</button>
+                <span id="totalClicks2">0</span>
+                <button onclick="totalClick2(1)" type="button">+</button>
+            </div>
+    
+            <!--FOREIGN ADULT-->
+            <div class="box">
+                <label for="foreign-adult">Foreign Adults : </label>
+                <button onclick="totalClick3(-1)" type="button">-</button>
+                <span id="totalClicks3">0</span>
+                <button onclick="totalClick3(1)" type="button">+</button>
+            </div>
+    
+            <!--FOREIGN CHILD-->
+            <div class="box">
+                <label for="foreign-child">Foreign Children : </label>
+                <button onclick="totalClick4(-1)" type="button">-</button>
+                <span id="totalClicks4">0</span>
+                <button onclick="totalClick4(1)" type="button">+</button>
+            </div>
+    
+            <!--INFANT-->
+            <div class="box">
+                <label for="infant">Infant : </label>
+                <button onclick="totalClick5(-1)" type="button">-</button>
+                <span id="totalClicks5">0</span>
+                <button onclick="totalClick5(1)" type="button">+</button>
+            </div>
+        </div>
+        <div class="durationinput">
+            <h3>Time you wanted to come?</h3>
+            <select name="duration" id="duration">
+                <option value="0">7:00 AM - 8:00 AM</option>
+                <option value="1">8:00 AM - 9:00 AM</option>
+                <option value="2">9:00 AM - 10:00 AM</option>
+                <option value="3">10:00 AM - 11:00 AM(peak)</option>
+                <option value="4">11:00 AM - 12:00 PM(peak)</option>
+                <option value="5">12:00 PM - 01:00 PM(peak)</option>
+                <option value="6">1:00 PM - 02:00 PM</option>
+                <option value="7">2:00 PM - 03:00 PM</option>
+                <option value="8">3:00 PM - 04:00 PM(peak)</option>
+                <option value="9">4:00 PM - 05:00 PM(peak)</option>
+                <option value="10">5:00 PM -06:00 PM(peak)</option>
+            </select>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th id="DateOut"></th>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <th id="TimeOut"></th>
+            </tr>
+            <tr>
+                <th>Duration</th>
+                <th id="DurationOut"></th>
+            </tr>
+            <tr>
+                <th>TICKETS</th>
+                <th>CHARGES</th>
+            </tr>
+            <tr>
+                <th id="slAdult"></th>
+                <th id="slAdultAmount"></th>
+            </tr>
+            <tr>
+                <th id="slChild"></th>
+                <th id="slChildAmount"></th>
+            </tr>
+            <tr>
+                <th id="frAdult"></th>
+                <th id="frAdultAmount"></th>
+            </tr>
+            <tr>
+                <th id="frChild"></th>
+                <th id="frChildAmount"></th>
+            </tr>
+            <tr>
+                <th id="infant"></th>
+                <th id="infantAmount"></th>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th id="totalOut"></th>
+            </tr>
+        </table>
+    </div>
+    <a href="" id="contbtn"><button type="submit" id="cont_btn">Continue With Purchase</button></a>
+    </form>
+
+    <script src="./Tickets.js"></script>
+</body>
+</html>

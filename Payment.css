@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #025464;
+}
+.header h1{
+    color: transparent;
+    font-size: 80px;
+    -webkit-text-stroke: 1px #ffff;
+    text-align: center;
+    margin: 5%;
+}
+.header h3{
+    color: #ffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.cardnum{
+    margin: 5%;
+    text-align: center;
+    color: #ffff;
+}
+.cardnum input{
+    padding: 10px;
+    width: 300px;
+    background: #ffff;
+    border-radius: 20px;
+}
+.expcvv{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+.expcvv input{
+    background: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #025464;
+}
+.cardName{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+.cardName input{
+    background: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #025464;
+    width: 300px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnpay{
+    color: #ffff;
+    padding: 10px;
+    border: solid 1px #ffff;
+    border-radius: 20px;
+    width: 150px;
+    transition: 1s;
+}
+#btnpay:hover{
+    background: #ffff;
+    color: #025464;
+}
+table, th, tr{
+    border: solid 1px #ffff;
+    width: 800px;
+    padding: 10px;
+    margin: 5%;
+    color: #ffff;
+    margin-left: 25%;
+
+}
+
+@media screen and (max-width:1200px){
+    table, th, tr{
+        margin-left: 10%;
+        width: 600px;
+    }
+}
+@media screen and (max-width:600px){
+    table, th, tr{
+        margin-left: 3%;
+        width: 500px;
+    }
+}

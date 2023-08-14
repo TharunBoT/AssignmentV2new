@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(/images/hikkaduwa-bg.jpg);
+    height: 870vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    float: right;
+    margin: 5% 5%;
+}
+
+nav{
+    display: flex;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.dropdown{
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #15F4EE;
+    transition: 1s;
+    text-align: center;
+}
+.header nav ul li a:hover{
+    background-color: #15F4EE;
+    color: black;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+}
+.header nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+}
+.header nav ul li:hover .dropdown li{
+    display: block;
+    margin-top: 10px;
+}
+.intro{
+    padding: 20% 8% 5% 8%;
+    color: #15F4EE;
+}
+.intro h1{
+    font-size: 60px;
+    text-align: center;
+}
+.intro p{
+    font-size: 23px;
+    text-align: center;
+    margin-top: 20px;
+}
+.hikkaduwa-map{
+    padding:5% 18%;
+}
+.hikkaduwa-map iframe{
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+}
+.activities{
+    padding: 5% 5%;
+    color: #15F4EE;
+}
+.activities h1{
+    font-size: 60px;
+    text-align: center;
+}
+.hikkaduwa-beach h1{
+    font-size: 40px;
+    padding-top:5% ;
+    color: cadetblue;
+}
+.activities p{
+    font-size: 23px;
+    text-align: center;
+}
+.hikkaduwa-img{
+    display: flex;
+    padding: 5% 5%;
+}
+.hikkaduwa-img img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(50%);
+    transition: 1s;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.hikkaduwa-img img:hover{
+    filter: brightness(100%);
+}
+.tsunami-museum h1{
+    font-size: 40px;
+    color: cadetblue;
+    padding-top: 8%;
+}
+.tsunami-museum p{
+    font-size: 23px;
+    color: #15F4EE;
+    text-align: center;
+}
+.tsunami-img{
+    display: flex;
+    padding: 5% 5%;
+}
+.tsunami-img img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(50%);
+    transition: 1s;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.tsunami-museum img:hover{
+    filter: brightness(100%);
+}
+.tsunami-temple h1{
+    padding-top: 8%;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+}
+.tsunami-temple p{
+    font-size: 23px;
+    color: #15F4EE;
+    text-align: center;
+}
+.temple-img{
+    display: flex;
+    padding: 5% 5%;
+}
+.temple-img img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(50%);
+    transition: 1s;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.temple-img img:hover{
+    filter: brightness(100%);
+}
+.coral-garden h1{
+    padding-top: 8%;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+}
+.coral-garden p{
+    font-size: 23px;
+    color: #15F4EE;
+    text-align: center;
+}
+.coral-img{
+    display: flex;
+    padding: 5% 5%;
+}
+.coral-img img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(50%);
+    transition: 1s;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.coral-img img:hover{
+    filter: brightness(100%);
+}
+.hatchery h1{
+    font-size: 60px;
+    color: #15F4EE;
+    padding-top: 8%;
+}
+.hatchery p{
+    padding: 0 10%;
+}
+.hatchery h4{
+    font-size: 30px;
+    text-align: center;
+    color: cadetblue;
+}
+.hatchery h5{
+    font-size: 23px;
+    color: #15F4EE;
+    text-align: center;
+    padding: 5% 5% 2% 5%;
+    text-decoration: underline
+}
+.hatchery-img{
+    display: flex;
+    padding: 5% 5%;
+}
+.hatchery-img img{
+    border-radius: 15px;
+    filter: brightness(50%);
+    transition: 1s;
+}
+.img-1{
+    width: 250px;
+    height: 400px;
+    padding-right: 10px;
+}
+.img-2{
+    width: 600px;
+    height: 400px;
+    padding-right: 10px;
+}
+.img-3{
+    width: 250px;
+    height: 400px;
+    padding-right: 10px;
+}
+.hatchery-img img:hover{
+    filter: brightness(100%);
+}
+.iframe{
+    padding: 3% 22%;
+}
+.iframe iframe{
+    width: 700px;
+    height: 300px;
+    border-radius: 15px;
+}
+.footer{
+    text-align: center;
+    padding: 10px 5% 10px 5%;
+}
+.footer a{
+    text-decoration: none;
+    color: #15F4EE;
+    font-size: 30px;
+}
+@media screen and (max-width:1200px) 
+{
+    .hikkaduwa-map{
+        padding: 5% 0%;
+    }.hikkaduwa-img, .tsunami-img, .temple-img, .hatchery-img, .coral-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+
+    }.iframe{
+        padding: 5% 0%;
+    }.container{
+        height: 100%;
+    }   
+}

@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/kosgoda-bg.jpg);
+    height: 480vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    float: right;
+    margin: 5% 5%;
+}
+
+nav{
+    display: flex;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.dropdown{
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #15F4EE;
+    transition: 1s;
+    text-align: center;
+}
+.header nav ul li a:hover{
+    background-color: #15F4EE;
+    color: black;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+}
+.header nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+}
+.header nav ul li:hover .dropdown li{
+    display: block;
+    margin-top: 10px;
+}
+.info{
+    padding: 20% 8%;
+    color: #15F4EE;
+}
+.info img{
+    width: 900px;
+    height: 450px;
+    filter: brightness(100%);
+    padding: 30% 9% 0 9%;
+
+}
+.info h1{
+    font-size: 90px;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#fff
+    ,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1200px 0;
+    animation: backcolor 10s linear infinite;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+.info p{
+    font-size: 25px;
+    text-align: center;
+    padding: 3% 5%;
+}
+.info-1{
+    display: flex;   
+}
+.info-1 p{
+    text-align: justify;
+}
+.info-1 img{
+    margin-top: -23%;
+    filter: brightness(70%);
+    transition: 1s;
+}
+.info-1 img:hover{
+    filter: brightness(100%);
+}
+.iframe{
+    padding: 5% 9% 0% 9%;
+}
+.iframe iframe{
+    width: 900px;
+    height: 350px;
+    border-radius: 15px;
+}
+.info-2{
+    padding: 0% 5%;
+}
+.info-2 h1{
+    text-align: center;
+    color: #15F4EE;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: -200px;
+    margin-bottom: 5%;
+}
+.info-img{
+    display: flex;
+}
+.info-img img{
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.info-img img:hover{
+    box-shadow: 1px 10px 10px 1px #15F4EE;
+}
+
+.bubble img{
+    width: 50px;
+    animation: bubble 10s linear infinite;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -2600px;
+}
+.footer{
+    text-align: center;
+    padding: 5% 5%;
+}
+.footer a{
+    text-decoration: none;
+    color: #15F4EE;
+    font-size: 30px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-480vh);
+        opacity: 0;
+    }
+}
+
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(6){
+    animation-delay: 6s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 7s;
+}
+@media screen and (max-width:1200px) {
+    .info img{
+        width: auto;
+        margin: auto;
+        display: flex;
+    }.info-1 img{
+        display: none;
+    }.iframe iframe{
+        width: 100%;
+        margin-bottom: 10%;
+    }.info-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }.container{
+        height: 100%;
+    }
+}

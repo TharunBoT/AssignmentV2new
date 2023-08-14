@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #025464;
+}
+.header h1{
+    text-align: center;
+    color: transparent;
+    font-size: 80px;
+    -webkit-text-stroke:0.1px #ffff;
+    margin: 5% 0; 
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin-left: 10%;
+}
+.inputs{
+    margin: 5% 0%;
+    padding-right: 100px;
+    color: #ffff;
+    font-size: 20px;
+}
+#name{
+    width: 425px;
+    padding: 10px;
+    background: #ffff;
+    border-radius: 20px;
+    color: #025464;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#country, #outputTel{
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #025464;
+    margin-top: 50px;
+}
+#country option{
+    color: #ffff;
+}
+#outputTel{
+    width: 290px;
+}
+#email, #cemail{
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #025464;
+    margin-top: 50px;
+}
+table, th, tr{
+    border: solid 1px #ffff;
+    width: 500px;
+    padding: 10px;
+    margin-top: 5%;
+    color: #ffff;
+}
+#href{
+    text-decoration: none;
+}
+#contbtn{
+    color: #ffff;
+    padding: 15px;
+    border: solid 1px #ffff;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+#contbtn:hover{
+    background: #ffff;
+    color: #025464;
+}
+
+@media screen and (max-width:1200px){
+    .flex{
+        flex-direction: column;
+        width: 600px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #outputTel{
+        width: 200px;
+    }
+    #email{
+        width: 380px;
+    }
+    #cemail{
+        width: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    .summary-table{
+        margin-left: -10px;
+    }
+    table{
+        width: 400px;
+    }
+}

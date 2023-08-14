@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/threats-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 940vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    float: right;
+    margin: 5% 5%;
+}
+
+nav{
+    display: flex;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.dropdown{
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #15F4EE;
+    transition: 1s;
+    text-align: center;
+}
+.header nav ul li a:hover{
+    background-color: #15F4EE;
+    color: black;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+}
+.header nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+}
+.header nav ul li:hover .dropdown li{
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+.info{
+    padding: 20% 8% 5% 8%;
+    color: #15F4EE;
+    text-align: center;
+}
+.info h1{
+    font-size: 60px;
+}
+.info p{
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    color: #15F4EE;
+    margin-top: 5%;
+    text-align: center;
+    border: 5px solid #15F4EE;
+    width: auto;
+    margin: 5%;
+    border-radius: 20px;
+}
+.content h1{
+    padding: 5% 0 0 0;
+}
+
+.content ul{
+    padding: 5% 0;
+    font-size: 23px;
+    line-height: 100px;
+    list-style: none;
+}
+.content ul li a{
+    text-decoration: none;
+    color: #15F4EE;
+    transition: 0.5s;
+}
+.content ul li a:hover{
+    background-color: #15F4EE;
+    color: black;
+    padding: 1% 5%;
+    border-radius: 30px;
+}
+#section1{
+    padding: 5% 5%;
+    color: #15F4EE;
+}
+#section1 h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 5% 5%;
+}
+#section1 p{
+    font-size: 30px;
+    text-align: center;
+}
+.sec-img{
+    display: flexbox;
+    padding: 3% 0;
+}
+.sec-img img{
+    width: 400px;
+    height: 250px;
+    filter: brightness(60%);
+    transition: 1s;
+    padding-right: 10px;
+}
+.sec-img img:hover{
+    filter: brightness(100%);
+}
+#section2{
+    padding: 5% 5%;
+    color: #15F4EE;
+}
+#section2 h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 0 5%;
+}
+#section2 p{
+    padding: 5% 5%;
+    font-size: 23px;
+    text-align: center;
+}
+#section3{
+    color: #15F4EE;
+    padding: 5% 5%;
+}
+#section3 h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 0 5%;
+}
+#section3 p{
+    font-size: 23px;
+    text-align: center;
+    padding: 5% 5%;
+}
+#section4{
+    padding: 5% 5%;
+    color: #15F4EE;
+}
+#section4 h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 0 5%;
+}
+#section4 p{
+    font-size: 23px;
+    text-align: center;
+    padding: 5% 5%;
+}
+.conservation{
+    padding: 5% 15%;
+    color:#15F4EE;
+}
+.conservation h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.conservation ul{
+    padding-left: 10% ;
+}
+.conservation li{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: cadetblue;
+}
+.conservation p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.conservation-projects{
+    display: flex;
+    position: relative;
+    padding: 5% 5%;
+}
+.hikkaduwa img{
+    height: 300px;
+    width: 400px;
+    display: block;
+}
+.kosgoda img{
+    height: 300px;
+    width: 400px;
+}
+.bentota img{
+    height: 300px;
+    width: 400px;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    width: 400px;
+    height: 300px;
+    margin-top: 67px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay h1{
+    color: #15F4EE;
+    padding: 20% 5% 5% 5%;
+}
+.overlay a{
+    text-decoration: none;
+    color: #15F4EE;
+    border: solid;
+    padding: 1% 3%;
+    border-radius: 20px;
+
+}
+
+.overlay2{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    width: 400px;
+    height: 300px;
+    margin-top: 67px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay2:hover{
+    opacity: 1;
+}
+
+.overlay2 h1{
+    color: #15F4EE;
+    padding: 20% 5% 5% 5%;
+}
+.overlay2 a{
+    text-decoration: none;
+    color: #15F4EE;
+    border: solid;
+    padding: 1% 3%;
+    border-radius: 20px;
+
+}
+
+.overlay3{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    width: 400px;
+    height: 300px;
+    margin-top: 67px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay3:hover{
+    opacity: 1;
+}
+
+.overlay3 h1{
+    color: #15F4EE;
+    padding: 20% 5% 5% 5%;
+}
+.overlay3 a{
+    text-decoration: none;
+    color: #15F4EE;
+    border: solid;
+    padding: 1% 3%;
+    border-radius: 20px;
+
+}
+.h1{
+    text-align: center;
+    font-size: 30px;
+    color: #15F4EE;
+}
+.footer{
+    text-align: center;
+    padding: 10px 5% 10px 5%;
+}
+.footer a{
+    text-decoration: none;
+    color: #15F4EE;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1200px){
+    .content{
+        margin-left: 5%;
+    }.sec-img{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }.container{
+        height: 100%;
+    }
+    
+}
